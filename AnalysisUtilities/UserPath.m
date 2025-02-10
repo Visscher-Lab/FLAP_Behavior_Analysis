@@ -14,4 +14,6 @@ function [startDirectory] = UserPath(user)
 
 if user == 'EC'
     startDirectory = 'C:\Users\VisLab\Documents\FlapData_\';
+elseif user == 'YS'
+    startDirectory = '/Users/yasminesaad/Desktop/FLAPAnalysis';
 end
