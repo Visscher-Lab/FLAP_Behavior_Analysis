@@ -20,4 +20,5 @@ elseif user == 'CC'
     startDirectory = 'C:\Users\sixth\Desktop\matlab people'
 elseif user == 'JH'
     startDirectory = 'C:\Users\Joseph Helmsing\Documents\FlapData'
+elseif user == 'HM'
 end
