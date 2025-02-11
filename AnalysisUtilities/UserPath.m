@@ -16,4 +16,6 @@ if user == 'EC'
     startDirectory = 'C:\Users\VisLab\Documents\FlapData_\';
 elseif user == 'YS'
     startDirectory = '/Users/yasminesaad/Desktop/FLAPAnalysis';
+elseif user == 'CC'
+    startDirectory = 'C:\Users\sixth\Desktop\matlab people'
 end
