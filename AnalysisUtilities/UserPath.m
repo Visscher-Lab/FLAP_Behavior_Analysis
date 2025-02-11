@@ -18,4 +18,6 @@ elseif user == 'YS'
     startDirectory = '/Users/yasminesaad/Desktop/FLAPAnalysis';
 elseif user == 'CC'
     startDirectory = 'C:\Users\sixth\Desktop\matlab people'
+elseif user == 'JH'
+    startDirectory = 'C:\Users\Joseph Helmsing\Documents\FlapData'
 end
