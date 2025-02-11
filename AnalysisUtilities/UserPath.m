@@ -21,4 +21,6 @@ elseif user == 'CC'
 elseif user == 'JH'
     startDirectory = 'C:\Users\Joseph Helmsing\Documents\FlapData'
 elseif user == 'HM'
+elseif user == 'RB'
+    startDirectory = '/Users/raisabhuyan/Documents/FlapData'
 end
