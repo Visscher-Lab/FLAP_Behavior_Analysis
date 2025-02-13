@@ -422,8 +422,8 @@ saccadicPrecision=caption;
 SaccadeLatency=averageRTout;
 usefulTrials=usefultrials;
 
-summaryData.(SUBJECT).saccadicPrecision=caption;
-summaryData.(SUBJECT).SaccadeLatency=averageRTout;
-summaryData.(SUBJECT).usefulTrials=usefultrials;
+summaryData.(SUBJECT).saccadicPrecision(str2double(answer{2}))=caption;
+summaryData.(SUBJECT).SaccadeLatency(str2double(answer{2}))=averageRTout;
+summaryData.(SUBJECT).usefulTrials(str2double(answer{2}))=usefultrials;
 
 

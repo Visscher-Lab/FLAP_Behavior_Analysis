@@ -796,4 +796,4 @@ print([Directory SUBJECT '_Fix stab KDE_with_BCEAnormc'], '-dpng', '-r300'); %<-
 %% RELEVANT SCORE(s)
 fixationStability=meanBCEA_deg;
 
-summaryData.(SUBJECT).fixationStability=fixationStability;
+summaryData.(SUBJECT).fixationStability(str2double(answer{2}))=fixationStability;
