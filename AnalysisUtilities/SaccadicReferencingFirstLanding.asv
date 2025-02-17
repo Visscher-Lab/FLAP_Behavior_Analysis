@@ -647,8 +647,6 @@ FirstSaccadeLandingLocation=caption;
 
     sNum = strcat(SUBJECT);
 
-summaryDataSRFL.(SUBJECT).saccadicRereferencing(str2double(answer{2}))=percentage;
+summaryData.(SUBJECT).saccadicRereferencing(str2double(answer{2}))=percentage;
 
-summaryDataSRFL.(SUBJECT).FirstSaccadeLandingLocation(str2double(answer{2}))=caption;
-
-save([Directory 'summaryDataSRFL.mat'],"summaryDataSRFL");
+summaryData.(SUBJECT).FirstSaccadeLandingLocation(str2double(answer{2}))=caption;

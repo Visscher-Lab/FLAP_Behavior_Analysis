@@ -795,5 +795,11 @@ print([Directory SUBJECT '_Fix stab KDE_with_BCEAnormc'], '-dpng', '-r300'); %<-
 
 %% RELEVANT SCORE(s)
 fixationStability=meanBCEA_deg;
+BCEAx = BCEA_analysis_average(1);
+BCEAy = BCEA_analysis_average(2);
 
-summaryData.(SUBJECT).fixationStability(str2double(answer{2}))=fixationStability;
+summaryDataFS.(SUBJECT).fixationStability(str2double(answer{2}))=fixationStability;
+summaryDataFS.(SUBJECT).BCEAx(str2double(answer{2}))=BCEAx;
+summaryDataFS.(SUBJECT).BCEAy(str2double(answer{2}))=BCEAy;
+
+save([Directory 'summaryDataFS.mat'],"summaryDataFS");

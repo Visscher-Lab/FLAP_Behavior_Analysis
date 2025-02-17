@@ -422,8 +422,9 @@ saccadicPrecision=caption;
 SaccadeLatency=averageRTout;
 usefulTrials=usefultrials;
 
-summaryData.(SUBJECT).saccadicPrecision(str2double(answer{2}))=caption;
-summaryData.(SUBJECT).SaccadeLatency(str2double(answer{2}))=averageRTout;
-summaryData.(SUBJECT).usefulTrials(str2double(answer{2}))=usefultrials;
+summaryDataSPLUT.(SUBJECT).saccadicPrecision(str2double(answer{2}))=caption;
+summaryDataSPLUT.(SUBJECT).SaccadeLatency(str2double(answer{2}))=averageRTout;
+summaryDataSPLUT.(SUBJECT).usefulTrials(str2double(answer{2}))=usefultrials;
 
 
+save([Directory 'summaryDataSPLUT.mat'],"summaryDataSPLUT");
