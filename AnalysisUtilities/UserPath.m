@@ -25,4 +25,6 @@ elseif user == 'EW'
     startDirectory = 'C:\Users\15127\OneDrive\Desktop\Visscher Lab Analysis Data'
 elseif user =='SN'
     startDirectory = 'C:\Users\nguye\Documents\VISLAB\FlapData\'
+elseif user == 'RB'
+    startDirectory = '/Users/raisabhuyan/Desktop/FLAP Data'
 end
