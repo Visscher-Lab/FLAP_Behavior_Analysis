@@ -28,7 +28,7 @@ elseif answer{2} == '2'
 end
 
 
-Directory =[SubjectDirectory{1,1} '\OculomotorFigures\'];
+Directory =[SubjectDirectory{1,1} '\OculomotorFigures\FixationStability'];
 mkdir(Directory);
 
 

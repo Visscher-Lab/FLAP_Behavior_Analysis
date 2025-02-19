@@ -31,7 +31,7 @@ elseif answer{2} == '2'
     BasePost = 'Post';
 end
 
-Directory =[SubjectDirectory{1,1} '\OculomotorFigures\'];
+Directory =[SubjectDirectory{1,1} '\OculomotorFigures\SaccadicPrecision'];
 mkdir(Directory);
 
 
