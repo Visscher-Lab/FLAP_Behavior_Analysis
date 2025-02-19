@@ -16,8 +16,8 @@ addpath(genpath(startDirectory));
 SubjectDirectory = findFolder(targetFolder, startDirectory);
 
 
-directoryPathPre = [SubjectDirectory{1,1}  '\pre'];
-directoryPathPost = [SubjectDirectory{1,1}  '\post'];
+directoryPathPre = fullfile([SubjectDirectory{1,1}  '\pre']);
+directoryPathPost = fullfile([SubjectDirectory{1,1}  '\post']);
 
 AvailableTasks = {};
 OcuMetrics = {'Saccadic Rereferencing & First Saccade Landing','Saccadic Precision, Latency & Useful Trials','Fixation Stability'};
