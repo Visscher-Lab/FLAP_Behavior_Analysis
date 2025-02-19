@@ -27,4 +27,6 @@ elseif user =='SN'
     startDirectory = 'C:\Users\nguye\Documents\VISLAB\FlapData\'
 elseif user == 'RB'
     startDirectory = '/Users/raisabhuyan/Desktop/FLAP Data'
+elseif user == 'E2'
+    startDirectory = 'C:\Users\ecutt\Documents\FLAP Analysis\FlapData';
 end
