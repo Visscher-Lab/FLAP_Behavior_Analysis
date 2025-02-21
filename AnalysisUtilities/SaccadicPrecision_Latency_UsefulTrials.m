@@ -36,7 +36,7 @@ mkdir(Directory);
 
 
 firsttrial = 1;
-totaltrial = length(TrialNum(6:end));
+totaltrial = length(mixtr);
 
 if exist('newEyeSummary')
     EyeSummary=newEyeSummary;
