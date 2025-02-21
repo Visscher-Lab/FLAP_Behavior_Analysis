@@ -23,8 +23,8 @@ AvailableTasks = {};
 OcuMetrics = {'Saccadic Rereferencing & First Saccade Landing','Saccadic Precision, Latency & Useful Trials','Fixation Stability'};
 
 if isempty(dir([directoryPathPre '\' subjectID '_FLAPfixationflicker*.mat'])) == 0 && isempty(dir([directoryPathPost '\' subjectID '_FLAPfixationflicker*.mat'])) == 0
-    FixationFilePre = dir([directoryPathPre '\' subjectID '_FLAPfixationflicker*.mat']);
-    FixationFilePost = dir([directoryPathPost '\' subjectID '_FLAPfixationflicker*.mat']);
+    FixationFilePre = dir([directoryPathPre '\' subjectID '_FLAPfixationflickerPixx*.mat']);
+    FixationFilePost = dir([directoryPathPost '\' subjectID '_FLAPfixationflickerPixx*.mat']);
     FixationFiles = {FixationFilePre(end).name FixationFilePost(end).name};
     AvailableTasks{1} = 'Fixation';
 
