@@ -1,0 +1,57 @@
+% created by ava (with huge help from elam) on 2/27/2025
+
+% Delete the % from "oculo_table = table ();" and run the line below alone to create a table. format should be: subject ID
+% in column 1, training type (1, 2, 3, or 4) in column 2, pre data in
+% column 3 and post data in column 4.
+
+% oculo_table = table();
+
+% DON'T run anything above twice. This creates a blank table. It will erase
+% your created table if you run it after inputting your data
+
+%this seperates the table into arrays based on training type
+oculo_tt1 = oculo_table(table2array(oculo_table(:,2)==1),:)
+oculo_tt2 = oculo_table(table2array(oculo_table(:,2)==2),:)
+oculo_tt3 = oculo_table(table2array(oculo_table(:,2)==3),:)
+
+daboxplot(table2array(oculo_table(:,3:4)))
+
+condition_names = {'Pre-Training', 'Post-Training'}
+
+% run ONLY the lines below this to generate your figure (after everything
+% above has been run once)
+
+% training 1 graph (with a y-label)
+plot1 = subplot(1,3,1)
+daboxplot(table2array(oculo_tt1(:,3:4)),'xtlabels', condition_names, 'whiskers', 0, 'scatter', 1, 'scattersize',25,'scatteralpha',0.6,'withinlines', 1,'outliers',1);
+ylim([25 85])
+ylabel('Saccadic Re-referencing Percentage')
+title([newline 'Training 1'])
+
+% training 2 graph (with an x-label)
+plot2 = subplot(1,3,2)
+daboxplot(table2array(oculo_tt2(:,3:4)),'xtlabels', condition_names, 'whiskers', 0, 'scatter', 1, 'scattersize',25,'scatteralpha',0.6,'withinlines', 1,'outliers',1);
+ylim([25 85])
+title(['Saccadic Re-referencing' newline 'Training 2'])
+xlabel('Time')
+
+% training 3 graph
+plot3 = subplot(1,3,3)
+daboxplot(table2array(oculo_tt3(:,3:4)),'xtlabels', condition_names, 'whiskers', 0, 'scatter', 1, 'scattersize',25,'scatteralpha',0.6,'withinlines', 1,'outliers',1);
+ylim([25 85])
+title([newline 'Training 3'])
+
+
+
+% This is a different graph I worked on with Paul. Figure 2 with means
+test1 = figure
+plot(table2array(oculo_tt1(:,3:4))','r-o')
+test1.CurrentAxes.XLim = [0 3]
+test1.CurrentAxes.XTick = [1,2]
+test1.CurrentAxes.XTickLabel = {'pretraining'; 'posttraining'}
+hold on
+plot([1 2], mean(table2array(oculo_tt1(:,3:4))),'r-o', 'MarkerFaceColor', 'r')
+plot(table2array(oculo_tt2(:,3:4))','b-o')
+plot([1,2], mean(table2array(oculo_tt2(:,3:4))),'b-o', 'MarkerFaceColor','b')
+plot(table2array(oculo_tt3(:,3:4))','m-o')
+plot([1,2], mean(table2array(oculo_tt3(:,3:4))),'m-o', 'MarkerFaceColor','m')
