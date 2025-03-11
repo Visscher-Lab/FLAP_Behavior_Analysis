@@ -50,7 +50,22 @@ elseif subjectID(2) == 'r'
         else
         end
     end
+elseif subjectID(2) == 'n'
+    ParticipantAssignment = readtable("ParticipantAssignmentsNEU_corr.csv");
+    for q = 1:size(ParticipantAssignment,1)
+        if string(ParticipantAssignment.participant(q)) == subjectID
+            PRL_side = string(ParticipantAssignment.TRL(q));
+        else
+        end
+    end
+    for z = 1:size(ParticipantAssignment,1)
+        if string(ParticipantAssignment.participant(z)) == subjectID
+            TrainingTask = string(ParticipantAssignment.TrainingTask(z));
+        else
+        end
+    end
 end
+
 
 % Folder name to search for
 targetFolder = subjectID;
