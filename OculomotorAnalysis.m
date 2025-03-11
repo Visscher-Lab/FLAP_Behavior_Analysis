@@ -37,7 +37,7 @@ if subjectID(2) == 'b'
         end
     end
 elseif subjectID(2) == 'r'
-    ParticipantAssignment = readtable("ParticipantAssignmentsUCR.csv");
+    ParticipantAssignment = readtable("ParticipantAssignmentsUCR_corr.csv");
     for q = 1:size(ParticipantAssignment,1)
         if string(ParticipantAssignment.participant(q)) == subjectID
             PRL_side = string(ParticipantAssignment.TRL(q));
