@@ -28,7 +28,7 @@ elseif answer{2} == '2'
 end
 
 
-Directory = fullfile([SubjectDirectory{1,1} '\OculomotorFigures\FixationStability']);
+Directory = fullfile([SubjectDirectory{1,1} '\OculomotorFigures\FixationStability\']);
 mkdir(Directory);
 
 
@@ -499,7 +499,7 @@ set(gca,'FontSize',16)
 xlim([0 60]);
 ylim([0 60]);
 suptitle( [SUBJECT BasePost ' single trial BCEA adj' ]);
-print([Directory SUBJECT 'Fix stab_histBCEA_fix_deg_adjnormc'], '-dpng', '-r300'); %<-Save as PNG with 300 DPI
+print([Directory SUBJECT BasePost 'Fix stab_histBCEA_fix_deg_adjnormc'], '-dpng', '-r300'); %<-Save as PNG with 300 DPI
 
 % boxplot of the size of the single-trial BCEAs
 figure
@@ -511,7 +511,7 @@ text(1,max(BCEA_area_deg_adj)*0.8,['area: ' thenums(1:end-2) ' deg^2'], 'FontSiz
 set(gca,'FontSize',28)
 ylabel('BCEA (deg^2)', 'fontsize', 28);
 
-print([Directory SUBJECT 'Fix stab_boxplotBCEA_fixnormc'], '-dpng', '-r300'); %<-Save as PNG with 300 DPI
+print([Directory SUBJECT BasePost 'Fix stab_boxplotBCEA_fixnormc'], '-dpng', '-r300'); %<-Save as PNG with 300 DPI
 
 % plot of the location of the centers of the single-trial BCEAs
 
@@ -552,7 +552,7 @@ ylabel('degrees of visual angle', 'fontsize', 28);
 xlabel('degrees of visual angle', 'fontsize', 28);
 
 
-print([Directory SUBJECT 'Fix stab_plotBCEAcentrnormc'], '-dpng', '-r300'); %<-Save as PNG with 300 DPI
+print([Directory SUBJECT BasePost 'Fix stab_plotBCEAcentrnormc'], '-dpng', '-r300'); %<-Save as PNG with 300 DPI
 
 
 % figure showing correlation of fixation duration X fixation BCEA with
@@ -609,7 +609,7 @@ xlabel('fixation duration (log(ms))', 'fontsize', 26);
 ylabel('{\surd}BCEA', 'fontsize', 26);
 
 title('BCEA X Fixation Duration')
-print([Directory SUBJECT 'Fix stab_BCEA_fitnormc'], '-dpng', '-r300'); %<-Save as PNG with 300 DPI
+print([Directory SUBJECT BasePost 'Fix stab_BCEA_fitnormc'], '-dpng', '-r300'); %<-Save as PNG with 300 DPI
 
 % figure showing correlation of fixation duration X fixation BCEA
 figure
@@ -695,7 +695,7 @@ xlim([-3 3]);
 ylim([0 35]);
 
 
-print([Directory SUBJECT 'Fix stab_histBCEA_fix_log_normlznormc'], '-dpng', '-r300'); %<-Save as PNG with 300 DPI
+print([Directory SUBJECT BasePost 'Fix stab_histBCEA_fix_log_normlznormc'], '-dpng', '-r300'); %<-Save as PNG with 300 DPI
 
 durationTrialSec=durationTrial*ifi;
 durationTrial_nozero=(durationTrialSec(durationTrial~=0));
@@ -778,7 +778,7 @@ ylabel('degrees of visual angle', 'fontsize', 28);
 xlabel('degrees of visual angle', 'fontsize', 28);
 
 
-print([Directory SUBJECT 'Fix stab_KDE_nocaptionnormc'], '-dpng', '-r300'); %<-Save as PNG with 300 DPI
+print([Directory SUBJECT BasePost 'Fix stab_KDE_nocaptionnormc'], '-dpng', '-r300'); %<-Save as PNG with 300 DPI
 
 hold on
 meanBCEA_deg=meanBCEA/3600;
@@ -791,7 +791,7 @@ else
     txt10=txt10(1:4);
 end
 text(11,11, ['BCEA= ' txt10, ' deg^{' num2str(2) '}'], 'FontSize', 20)
-print([Directory SUBJECT '_Fix stab KDE_with_BCEAnormc'], '-dpng', '-r300'); %<-Save as PNG with 300 DPI
+print([Directory SUBJECT BasePost '_Fix stab KDE_with_BCEAnormc'], '-dpng', '-r300'); %<-Save as PNG with 300 DPI
 
 %% RELEVANT SCORE(s)
 fixationStability=meanBCEA_deg;

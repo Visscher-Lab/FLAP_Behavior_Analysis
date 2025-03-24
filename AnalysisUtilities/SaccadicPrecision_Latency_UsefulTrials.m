@@ -31,12 +31,12 @@ elseif answer{2} == '2'
     BasePost = 'Post';
 end
 
-Directory = fullfile([SubjectDirectory{1,1} '\OculomotorFigures\SaccadicPrecision']);
+Directory = fullfile([SubjectDirectory{1,1} '\OculomotorFigures\SaccadicPrecision\']);
 mkdir(Directory);
 
 
 firsttrial = 1;
-totaltrial = length(TrialNum(6:end));
+totaltrial = length(mixtr);
 
 if exist('newEyeSummary')
     EyeSummary=newEyeSummary;
