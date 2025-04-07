@@ -30,5 +30,7 @@ elseif user == 'RB'
 elseif user == 'E2'
     startDirectory = 'C:\Users\ecutt\Documents\FLAP Analysis\FlapData'
 elseif user == 'AP'
-    startDirectory = 'C:\Users\avvie\OneDrive\Documents\GitHub\FLAPData';
+    startDirectory = 'C:\Users\avvie\OneDrive\Documents\GitHub\FLAPData'
+elseif user == 'NV'
+    startDirectory = '/Users/nathanvuong/Desktop/FLAPdata';
 end
