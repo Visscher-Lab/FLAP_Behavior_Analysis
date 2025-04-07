@@ -32,5 +32,5 @@ elseif user == 'E2'
 elseif user == 'AP'
     startDirectory = 'C:\Users\avvie\OneDrive\Documents\GitHub\FLAPData'
 elseif user == 'NV'
-    startDirectory = '/Users/nathanvuong/Documents/MATLAB';
+    startDirectory = '/Users/nathanvuong/Documents/FLAPdata';
 end
