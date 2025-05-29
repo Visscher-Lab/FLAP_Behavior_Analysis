@@ -19,7 +19,7 @@ elseif user == 'YS'
 elseif user == 'CC'
     startDirectory = 'C:\Users\sixth\Desktop\matlab people'
 elseif user == 'JH'
-    startDirectory = 'C:\Users\Joseph Helmsing\Documents\FlapData'
+    startDirectory = 'C:\Users\Joseph Helmsing\Documents\FlapData\'
 elseif user == 'HM'
 elseif user == 'EW'
     startDirectory = 'C:\Users\15127\OneDrive\Desktop\Visscher Lab Analysis Data'
@@ -30,5 +30,7 @@ elseif user == 'RB'
 elseif user == 'E2'
     startDirectory = 'C:\Users\ecutt\Documents\FLAP Analysis\FlapData'
 elseif user == 'AP'
-    startDirectory = 'C:\Users\avvie\OneDrive\Documents\GitHub\FLAPData';
+    startDirectory = 'C:\Users\avvie\OneDrive\Documents\GitHub\FlapData'
+elseif user == 'NV'
+    startDirectory = '/Users/nathanvuong/Desktop/FLAPdata';
 end
