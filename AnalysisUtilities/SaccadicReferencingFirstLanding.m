@@ -242,7 +242,7 @@ for i=firsttrial:totaltrial
                 
                 % 'old way'
       %          offsetTarget.(TrialNum).FixationY=(Heatmap.(TrialNum).OneFixationYClean)-Heatmap.(TrialNum).TargetYRespectToCenter;
-     %           offsetTarget.(TrialNum).FixationX=(Heatmap.(TrialNum).OneFixationXClean)-Heatmap.(TrialNum).TargetXRespectToCenter;
+      %           offsetTarget.(TrialNum).FixationX=(Heatmap.(TrialNum).OneFixationXClean)-Heatmap.(TrialNum).TargetXRespectToCenter;
                              
                 offsetTarget.(TrialNum).FixationY=Heatmap.(TrialNum).TargetYRespectToCenter-(Heatmap.(TrialNum).OneFixationYClean);
                 offsetTarget.(TrialNum).FixationX=Heatmap.(TrialNum).TargetXRespectToCenter-(Heatmap.(TrialNum).OneFixationXClean);
