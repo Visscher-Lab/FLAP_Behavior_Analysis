@@ -16,6 +16,8 @@
 %related to fixation duration, correlation of fixation duration and
 %dispersion etc.
 
+%% PRL-SPECIFIC ANALYISIS IS NOT HERE
+
 %%
 close all
 
@@ -27,7 +29,7 @@ elseif answer{2} == '2'
     BasePost = 'Post';
 end
 
-
+% Created folder for outputting figures
 Directory = fullfile([SubjectDirectory{1,1} '\OculomotorFigures\FixationStability\']);
 mkdir(Directory);
 
